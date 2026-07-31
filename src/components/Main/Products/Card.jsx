@@ -22,7 +22,7 @@ const Card = ({ product }) => {
               onMouseLeave={() => setHoveredId(null)}
             >
               {/* Product Image */}
-              <div className='w-full h-96 relative overflow-hidden'>
+              <div className='w-full aspect-[3/4] relative overflow-hidden'>
                 <img
                   src={
                     hoveredId === pro.id && pro.imageURLChange

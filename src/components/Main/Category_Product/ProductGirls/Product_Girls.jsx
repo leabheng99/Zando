@@ -29,7 +29,7 @@ const Product_Girls = () => {
               onMouseLeave={() => setHoveredId(null)}
             >
               {/* Image */}
-              <div className="relative w-full h-96">
+              <div className="relative w-full aspect-[3/4]">
                 <img
                   src={hoveredId === product.id && product.imageURLChange ? product.imageURLChange : product.imageURL}
                   alt={product.name}
