@@ -8,7 +8,7 @@ const CartPage = ({ isOpen, closeCart }) => {
   return (
     <div
       className={`
-        fixed top-0 right-0 h-screen w-[400px] bg-white shadow-lg z-50
+        fixed top-0 right-0 h-screen w-full max-w-[400px] bg-white shadow-lg z-50
         transform transition-transform duration-500 ease-in-out
         ${isOpen ? "translate-x-0" : "translate-x-full"}
       `}

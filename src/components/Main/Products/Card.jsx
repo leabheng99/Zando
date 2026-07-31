@@ -8,13 +8,13 @@ const Card = ({ product }) => {
   return (
     <div className='w-full pb-10 px-4 sm:px-10 md:px-12 lg:px-20'>
       <h1 className=" pt-18 pb-10 text-3xl font-bold uppercase">Top Product</h1>
-      <div className='flex flex-wrap justify-between gap-7 lg:gap-4 '>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 lg:gap-4'>
         
         {product.map((pro) => (
           <Link
             key={pro.id}
             to={`/product/${pro.id}`}
-            className='w-full sm:w-[47%] md:[48%] lg:w-[23%]'
+            className='w-full'
           >
             <div
               className='rounded-lg overflow-hidden shadow-md hover:shadow-lg shadow-black/20 hover:scale-105 transform transition duration-300 bg-white cursor-pointer'

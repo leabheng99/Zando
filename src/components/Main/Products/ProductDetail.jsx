@@ -32,7 +32,7 @@ const ProductDetail = () => {
             className="w-full h-full object-cover rounded-lg shadow-md"
           />
           {product.discount > 0 && (
-            <span className="absolute top-4 left-[15%] bg-red-500 text-white px-3 py-1 font-bold rounded">
+            <span className="absolute top-4 left-4 lg:left-24 bg-red-500 text-white px-3 py-1 font-bold rounded">
               -{(product.discount * 100).toFixed(0)}%
             </span>
           )}
